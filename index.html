@@ -1,35 +1,135 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Pathak | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
 </head>
+
+<!-- <script src="script.js"></script> -->
+
 <body>
 
-    <header>
-        <h1>Aditya Pathak</h1>
-        <p>Machine Learning Engineer</p>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I build ML models and scalable applications.</p>
-    </section>
+<!-- 🔥 Navbar -->
+<nav class="navbar">
+    <h2>Aditya</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Description here</p>
+<!-- 🚀 Hero Section -->
+<section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Hi, I'm <span>Aditya Pathak</span></h1>
+        <p>Machine Learning Engineer | Building Data-Driven Solutions</p>
+
+        <div class="buttons">
+            <a href="https://github.com/06Aditya" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-    </section>
+<!-- 👨‍💻 About -->
+<section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+        Machine Learning Engineer with 2+ years of experience building scalable ML solutions 
+        and data-driven applications. Passionate about solving real-world problems using data, 
+        optimizing models, and deploying efficient systems.
+    </p>
+</section>
 
+<!-- 🛠 Skills -->
+<section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Pandas</div>
+        <div class="skill-card">NumPy</div>
+        <div class="skill-card">Scikit-learn</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">Docker</div>
+    </div>
+</section>
+
+<!-- 📂 Projects -->
+<section id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card" data-aos="zoom-in">
+            <h3>Fraud Detection System</h3>
+            <p>Built a Random Forest model achieving 92% accuracy and reducing false positives.</p>
+            <p><strong>Tech:</strong> Python, Scikit-learn</p>
+            <a href="#">GitHub</a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in">
+            <h3>Customer Segmentation</h3>
+            <p>Used K-Means clustering to identify customer groups for targeted marketing.</p>
+            <p><strong>Tech:</strong> Python, Pandas</p>
+            <a href="#">GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- 💼 Experience -->
+<section id="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <h3>Machine Learning Engineer</h3>
+        <p>Helious Tech Solutions Pvt. Ltd.</p>
+        <p>
+            Worked on building ML pipelines, improving model performance, 
+            and deploying scalable solutions for real-world applications.
+        </p>
+    </div>
+</section>
+
+<!-- 📬 Contact -->
+<section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>
+        <a href="https://github.com/06Aditya">GitHub</a> |
+        <a href="https://linkedin.com/">LinkedIn</a>
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Aditya Pathak</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Your Script -->
+<script src="script.js"></script>
 </body>
 </html>

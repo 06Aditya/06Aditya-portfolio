@@ -1,22 +1,174 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.navbar a.active {
+    color: #38bdf8;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #0f172a;
-    color: white;
+background: #0f172a;
+color: white;
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 50px;
+/* 🔥 Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background: #020617;
+position: sticky;
+top: 0;
 }
 
+.navbar ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.navbar a:hover {
+color: #38bdf8;
+}
+
+/* 🚀 Hero */
+.hero {
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.hero span {
+color: #38bdf8;
+}
+
+.buttons a {
+display: inline-block;
+margin: 10px;
+padding: 10px 20px;
+border: 1px solid #38bdf8;
+border-radius: 8px;
+text-decoration: none;
+color: #38bdf8;
+transition: 0.3s;
+}
+
+.buttons a:hover {
+background: #38bdf8;
+color: #0f172a;
+}
+
+/* Sections */
 section {
-    padding: 40px;
+padding: 60px 10%;
 }
 
-.project {
-    background: #1e293b;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
+h2 {
+margin-bottom: 20px;
+text-align: center;
 }
+
+/* 🛠 Skills */
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+}
+
+.skill-card {
+background: #1e293b;
+padding: 10px 20px;
+border-radius: 20px;
+transition: 0.3s;
+}
+
+.skill-card:hover {
+background: #38bdf8;
+color: #0f172a;
+}
+
+/* 📂 Projects */
+.project-container {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.project-card {
+background: #1e293b;
+padding: 20px;
+border-radius: 12px;
+width: 300px;
+transition: 0.3s;
+}
+
+.project-card:hover {
+transform: translateY(-10px);
+}
+
+.project-card a {
+display: inline-block;
+margin-top: 10px;
+color: #38bdf8;
+text-decoration: none;
+}
+
+/* 💼 Experience */
+.experience-card {
+background: #1e293b;
+padding: 20px;
+border-radius: 12px;
+max-width: 600px;
+margin: auto;
+}
+
+/* 📬 Contact */
+#contact a {
+color: #38bdf8;
+text-decoration: none;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background: #020617;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+}
+
