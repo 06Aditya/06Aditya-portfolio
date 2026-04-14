@@ -1,0 +1,116 @@
+{
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "I'm Aditya Pathak. Machine Learning Engineer | AI Enthusiast | 2+ Years Experience. I specialize in building scalable ML systems using Python, Scikit-learn, TensorFlow, and PyTorch. I enjoy solving real-world problems using data and deploying intelligent solutions.",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Fraud Detection System",
+      "startDate": "2025",
+      "description": "Built a machine learning model using Random Forest to detect fraudulent transactions with 92% accuracy. Reduced false positives significantly using feature engineering and hyperparameter tuning.",
+      "images": [
+        "images/portfolio/fraud-detection/p1.jpg",
+        "images/portfolio/fraud-detection/p2.jpg"
+      ],
+      "url": "https://github.com/06Aditya/Movie-Recommender-System",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-scikit-learn-plain",
+          "name": "Scikit-learn"
+        },
+        {
+          "class": "devicon-pandas-plain",
+          "name": "Pandas"
+        }
+      ]
+    },
+    {
+      "title": "Customer Segmentation",
+      "startDate": "2025",
+      "description": "Performed customer segmentation using K-Means clustering to identify key user groups for targeted marketing strategies.",
+      "images": [
+        "images/portfolio/customer-segmentation/p1.jpg",
+        "images/portfolio/customer-segmentation/p2.jpg"
+      ],
+      "url": "https://github.com/06Aditya",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-numpy-plain",
+          "name": "NumPy"
+        },
+        {
+          "class": "devicon-pandas-plain",
+          "name": "Pandas"
+        }
+      ]
+    },
+    {
+      "title": "ML Pipeline Automation",
+      "startDate": "2024",
+      "description": "Designed an end-to-end ML pipeline for data preprocessing, model training, evaluation, and deployment automation using Docker containers.",
+      "images": [
+        "images/portfolio/ml-pipeline/p1.jpg"
+      ],
+      "url": "https://github.com/06Aditya",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Helious Tech Solutions Pvt. Ltd.",
+      "title": "Machine Learning Engineer",
+      "years": "2024 - Present",
+      "mainTech": [
+        "Python",
+        "TensorFlow",
+        "Pytorch",
+        "Deep Learning"
+      ],
+      "technologies": [
+        "Machine Learning",
+        "Data Analysis",
+        "Model Deployment",
+        "Feature Engineering",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Amazin Automations Pvt. Ltd.",
+      "title": "Machine Learning Engineer",
+      "years": "2023 - 2024",
+      "mainTech": [
+        "Python",
+        "Scikit-learn"
+      ],
+      "technologies": [
+        "Deep Learning",
+        "Computer Vision",
+        "Model Training",
+        "Data Processing"
+      ]
+    }
+  ]
+}
