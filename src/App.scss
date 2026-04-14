@@ -1,0 +1,625 @@
+@import '../src/scss/themes/theme-dark.scss';
+@import '../src/scss/themes/theme-light.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    /* Remove !important to allow the data-theme variables to take over */
+    background-color: var(--body-background); 
+    color: var(--text-color);
+  	scroll-behavior: smooth;
+	scroll-behavior: smooth;
+  	overflow-x: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    /* Remove !important to allow the data-theme variables to take over */
+    background-color: var(--body-background); 
+    color: var(--text-color);
+}
+
+/* This ensures that when you toggle the theme, the colors fade smoothly */
+header, 
+section, 
+div, 
+span, 
+h1, 
+h2, 
+footer, 
+.skills-tile, 
+.foto div,
+.polaroid span {
+    transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease, box-shadow 0.4s ease;
+}
+
+/* Re-adding theme transition to body ONLY for the data-theme change, not initial load */
+body[data-theme='light'] {
+    --body-background: #e9d5a1;
+    --about-background: #ffffff;
+    --card-background: #ffffff; /* Added this */
+    --text-color: #353239;
+    --header-text: #353239;
+}
+
+body[data-theme='dark'] {
+    --body-background: #282828;   
+    --about-background: #1f1f1f;
+    --card-background: #333333; /* Added this - lighter than body for depth */
+    --text-color: #f8f5f4;
+    --header-text: #f8f5f4;
+}
+
+/* Add this to ensure the class is forced to use the variable */
+.project-card-clean {
+    background-color: var(--card-background) !important;
+    color: var(--text-color) !important;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.title-styles {
+    font-family: 'Raleway', sans-serif;
+    font-size: 250%;
+}
+
+/* --- 2. HEADER & ANIMATIONS --- */
+.header-icon {
+    height: 150px;
+    width: 150px;
+    animation: float 4s ease-in-out infinite;
+}
+
+header {
+    position: relative;
+    height: 520px;
+    width: 100%;
+    /* FIX: Ensure all text content is centered */
+    text-align: center; 
+    overflow: hidden;
+    background-color: var(--body-background) !important;
+    padding-top: 150px;
+    transition: background-color 0.6s ease;
+}
+
+/* Updated to ensure icons aren't forced dark by global filters */
+// .language-icon {
+//     font-size: 50px;
+//     cursor: pointer;
+//     filter: none; /* Overrides any accidental global filters */
+// }
+
+.project-date {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 15px 2px 15px;
+    position: relative;
+    z-index: 1; /* Changed from -500 so it's actually visible */
+    border-top: 5px solid #AE944F; /* Use your theme gold instead of grey */
+    border-radius: 0 0 5px 5px;
+    background-color: #AE944F; 
+    color: white !important; /* Date usually looks best white on a colored badge */
+}
+
+.skills-tile {
+    background-color: transparentize(#F8F5F4, 0.95);
+    padding: 10px 10px 5px 10px;
+    width: 100px;
+    margin: 5px 0 5px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skills-tile:hover {
+    transform: translateY(-5px);
+}
+
+/* Updated: Removed background color to prevent "muddying" the flags */
+/* --- Updated Language Section --- */
+.language {
+    font-size: 25px;
+    background-color: var(--body-background) !important;
+    padding-bottom: 10px;
+    padding-top: 80px;
+    /* FIX: Keep flags centered using flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: background-color 0.6s ease;
+}
+
+/* Ensure the icons themselves don't have weird filters in dark mode */
+.language-icon {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: none !important;
+}
+
+header h1 {
+    color: var(--header-text);
+    font-size: 400%;
+    /* FIX: Explicitly center the H1 just in case */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.slider-image {
+    border: 5px solid #D7CAAA;
+}
+
+.slider-tab {
+    background-color: #D7CAAA;
+    height: 25px;
+}
+
+.slider-iconfiy {
+    margin-top: 10px;
+}
+
+.styles_typicalWrapper__1_Uvh::after {
+    cursor: none !important;
+    display: none;
+}
+
+// #about {
+//     background: #fff;
+//     overflow: hidden;
+//     padding-bottom: 70px;
+// }
+
+#about {
+    /* This ensures the about section also uses the grey variable */
+    background-color: var(--about-background) !important;
+    color: var(--text-color);
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+#about h1 {
+    /* Use !important to crush the inline style color: rgb(53, 50, 57) */
+    color: var(--header-text) !important; 
+    
+    padding-top: 5%;
+    font: 18px/24px 'opensans-bold', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 60px !important;
+    
+    /* Smooth transition when switching themes */
+    transition: color 0.6s ease;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+}
+
+.foto div {
+    /* FIX: Use theme variables for card-like elements */
+    background: var(--card-background, #ffffff);
+    color: var(--text-color, #000);
+    display: inline-block;
+    margin: 0 auto 5% auto;
+    padding: 10px 10px 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    z-index: 0;
+    position: relative;
+}
+
+.foto div:after {
+    /* FIX: Ensure caption text follows theme */
+    color: var(--text-color, #333);
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+}
+
+.foto div:hover {
+    transform: scale(1.03) translateY(-5px);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+.project-title-settings {
+    margin-top: 5%;
+    font: 18px/24px 'opensans-bold', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* FIX: Use theme variable instead of hardcoded black */
+    color: var(--header-text) !important; 
+    text-align: center;
+    transition: color 0.6s ease;
+}
+
+.polaroid img {
+    display: block;
+    max-width: 200px;
+}
+
+.polaroid span {
+    /* FIX: Use theme variables for card-like elements */
+    background: var(--card-background, #ffffff);
+    color: var(--text-color, #000);
+    display: inline-block;
+    margin: 0 auto 5% auto;
+    padding: 10px 10px 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    z-index: 0;
+    position: relative;
+}
+
+.polaroid span:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.link-href {
+    color: black;
+}
+
+.wave {
+    font-size: 160%;
+}
+
+.font-trebuchet {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#preview {
+    width: 500px;
+    background-color: #ebeaf5;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 15%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume {
+    background: #efe1bd;
+}
+
+.experience-icon {
+    font-size: 300%;
+    margin-top: 25%;
+    text-align: center;
+}
+
+/* Makes the year text (outside the card) follow the theme */
+.experience-date-text {
+    color: var(--header-text) !important;
+    opacity: 1 !important;
+    font-weight: 600;
+}
+
+.main-badge {
+    font-size: 13px !important;
+    text-align: left !important;
+    padding: 5px 8px 5px 8px !important;
+    vertical-align: baseline;
+    background-color: #AE944F !important;
+    color: white;
+    font-weight: lighter !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.experience-badge {
+    font-size: 11px !important;
+    text-align: left !important;
+    padding: 5px 8px 5px 8px !important;
+    vertical-align: baseline;
+    // background-color: #f9f5e9 !important;
+    // color: black;
+    background-color: #AE944F !important;
+    color: white !important;
+    font-weight: lighter !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.vertical-timeline-element-date {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.vertical-timeline::before {
+    background: #AE944F !important;
+}
+
+@media only screen and (max-width: 1170px) {
+    .experience-icon {
+        font-size: 170%;
+        margin-top: 27%;
+        text-align: center;
+    }
+}
+
+.modal-inside .modal-content {
+    background: white;
+}
+
+.bars {
+    width: 95%;
+    float: left;
+    padding: 0;
+    text-align: left;
+}
+
+.bars .skills {
+    margin-top: 36px;
+    list-style: none;
+}
+
+.bars li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+}
+
+.bars li em {
+    font: 15px 'opensans-bold', sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+}
+
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+}
+
+.modal-close {
+    text-align: right;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.close-icon {
+    color: black;
+    font-weight: lighter !important;
+}
+
+.modal-description {
+    text-align: justify;
+    padding: 5px 5px 0 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.awssld__next, .awssld__prev {
+    outline: none !important;
+}
+
+.loader-bar-color {
+    color: black !important;
+}
+
+#portfolio {
+    background: #efe1bd;
+    padding-bottom: 5%;
+}
+
+.portfolio-item {
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    transition: all ease 0.5s;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .portfolio .closeButtonResponsive {
+        display: block;
+    }
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+    }
+}
+
+#skills {
+	margin-top: -1px;
+	z-index: 10;
+	position: relative;
+    background: #1F1F1F;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+
+.section-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 180%;
+    color: white;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+    color: #AE944F;
+}
+
+footer {
+    background: #1F1F1F;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
+}
+
+footer i {
+    /* Ensures icons themselves don't have weird boxes or hardcoded colors */
+    background: transparent !important;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+/* Removes the default Bootstrap white background */
+.custom-modal-content {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.project-details-modal .modal-dialog {
+    max-width: 800px;
+}
+
+/* Ensure icons in the modal follow theme color if they aren't brand-colored */
+.project-details-modal i {
+    color: var(--header-text);
+}
+
+.modal-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 100;
+    transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+    transform: scale(1.1);
+}
+
+/* Progress bar container */
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+
+/* The actual bar */
+.progress-bar {
+  height: 4px;
+  background: #AE944F; /* Your signature gold */
+  width: 0%;
+}
+
+/* Optional: Custom Scrollbar to match your gold theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #AE944F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8e7940;
+}
+
+
+
+/* --- KEYFRAMES FOR ANIMATIONS --- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
