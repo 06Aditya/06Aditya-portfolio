@@ -9,6 +9,7 @@ Passionate about building scalable ML systems and solving real-world problems
 
 [![Linkedin: aditya](https://img.shields.io/badge/-aditxya-blue?style=flat-square\&logo=Linkedin\&logoColor=white\&link=https://www.linkedin.com/in/aditxya/)](https://www.linkedin.com/in/aditxya/)
 [![GitHub Aditya](https://img.shields.io/github/followers/06Aditya?label=follow\&style=social)](https://github.com/06Aditya)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-AE944F?style=flat-square&logo=react&logoColor=white)](https://06aditya.github.io/06Aditya-portfolio/)
 
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
