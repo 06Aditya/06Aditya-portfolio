@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "नमस्ते",
-    "description": "👋 मैं आदित्य पाठक हूँ। मशीन लर्निंग इंजीनियर | एआई उत्साही | 2+ वर्षों का अनुभव। मैं Python, Scikit-learn, TensorFlow और PyTorch का उपयोग करके स्केलेबल मशीन लर्निंग सिस्टम बनाता हूँ। मुझे डेटा के साथ वास्तविक समस्याओं को हल करना और इंटेलिजेंट सिस्टम बनाना पसंद है।",
+    "description": "मैं आदित्य पाठक हूँ। मशीन लर्निंग इंजीनियर | एआई उत्साही | 2+ वर्षों का अनुभव। मैं Python, Scikit-learn, TensorFlow और PyTorch का उपयोग करके स्केलेबल मशीन लर्निंग सिस्टम बनाने में विशेषज्ञ हूँ। मुझे डेटा के साथ वास्तविक समस्याओं को हल करना और इंटेलिजेंट सॉल्यूशंस को डिप्लॉय करना पसंद है।",
     "section_name": {
       "about": "मेरे बारे में",
       "projects": "प्रोजेक्ट्स",
@@ -11,38 +11,34 @@
   },
   "projects": [
     {
-      "title": "फ्रॉड डिटेक्शन सिस्टम",
-      "startDate": "2025",
-      "description": "Random Forest मॉडल का उपयोग करके धोखाधड़ी वाले लेनदेन का पता लगाया, जिसमें 92% सटीकता प्राप्त हुई। फीचर इंजीनियरिंग और हाइपरपैरामीटर ट्यूनिंग के माध्यम से false positives को काफी कम किया।",
-      "images": [
-        "images/portfolio/fraud-detection/p1.jpg",
-        "images/portfolio/fraud-detection/p2.jpg"
-      ],
-      "url": "https://github.com/06Aditya",
+      "title": "मूवी रिकमेंडर सिस्टम",
+      "startDate": "2024",
+      "description": "NLP और कोसाइन सिमिलरिटी का उपयोग करके एक कंटेंट-बेस्ड रिकमेंडेशन इंजन तैयार किया, जिसने प्रासंगिक कंटेंट क्लस्टर्स की पहचान करने में 92% मैचिंग सटीकता प्राप्त की।",
+      "url": "https://github.com/06Aditya/Movie-Recommender-System",
       "technologies": [
         {
           "class": "devicon-python-plain",
           "name": "Python"
         },
         {
-          "class": "devicon-scikit-learn-plain",
+          "class": "devicon-scikitlearn-plain",
           "name": "Scikit-learn"
         },
         {
           "class": "devicon-pandas-plain",
           "name": "Pandas"
+        },
+        {
+          "class": "devicon-numpy-plain",
+          "name": "NumPy"
         }
       ]
     },
     {
-      "title": "कस्टमर सेगमेंटेशन",
+      "title": "स्पीच इमोशन रिकग्निशन",
       "startDate": "2025",
-      "description": "K-Means क्लस्टरिंग का उपयोग करके ग्राहकों के विभिन्न समूह बनाए ताकि लक्षित (targeted) मार्केटिंग रणनीतियां तैयार की जा सकें।",
-      "images": [
-        "images/portfolio/customer-segmentation/p1.jpg",
-        "images/portfolio/customer-segmentation/p2.jpg"
-      ],
-      "url": "https://github.com/06Aditya",
+      "description": "CNN और MLP आर्किटेक्चर का उपयोग करके RAVDESS डेटासेट से 8 अलग-अलग भावनाओं को वर्गीकृत करने के लिए एक सिस्टम विकसित किया, जिसने उन्नत MFCC फीचर एक्सट्रैक्शन के माध्यम से 91% सटीकता हासिल की।",
+      "url": "https://github.com/06Aditya/Speech-Recognition-through-the-Emotions",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -55,17 +51,22 @@
         {
           "class": "devicon-pandas-plain",
           "name": "Pandas"
+        },
+        {
+          "class": "devicon-scikitlearn-plain",
+          "name": "Scikit-learn"
+        },
+        {
+          "class": "devicon-tensorflow-original",
+          "name": "TensorFlow"
         }
       ]
     },
     {
-      "title": "एमएल पाइपलाइन ऑटोमेशन",
-      "startDate": "2024",
-      "description": "डेटा प्रीप्रोसेसिंग, मॉडल ट्रेनिंग, मूल्यांकन और ऑटोमेशन डिप्लॉयमेंट के लिए एक एंड-टू-एंड ML पाइपलाइन डिजाइन की।",
-      "images": [
-        "images/portfolio/ml-pipeline/p1.jpg"
-      ],
-      "url": "https://github.com/06Aditya",
+      "title": "फेस मास्क डिटेक्शन (CNN)",
+      "startDate": "2026",
+      "description": "CNN और OpenCV का उपयोग करके एक रियल-टाइम कंप्यूटर विज़न सिस्टम विकसित किया, जिसने लाइव वेबकैम स्ट्रीम और विभिन्न लाइटिंग स्थितियों में 98% डिटेक्शन सटीकता प्राप्त की।",
+      "url": "https://github.com/06Aditya/Face-Mask-detection-using-CNN-Convolutional-Neural-Network-",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -74,6 +75,10 @@
         {
           "class": "devicon-docker-plain",
           "name": "Docker"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV"
         }
       ]
     }
@@ -86,14 +91,14 @@
       "mainTech": [
         "Python",
         "TensorFlow",
-        "PyTorch",
+        "Pytorch",
         "Deep Learning"
       ],
       "technologies": [
-        "Machine Learning",
-        "Data Analysis",
-        "Model Deployment",
-        "Feature Engineering",
+        "मशीन लर्निंग",
+        "डेटा एनालिसिस",
+        "मॉडल डिप्लॉयमेंट",
+        "फीचर इंजीनियरिंग",
         "SQL"
       ]
     },
@@ -106,10 +111,10 @@
         "Scikit-learn"
       ],
       "technologies": [
-        "Deep Learning",
-        "Computer Vision",
-        "Model Training",
-        "Data Processing"
+        "डीप लर्निंग",
+        "कंप्यूटर विज़न",
+        "मॉडल ट्रेनिंग",
+        "डेटा प्रोसेसिंग"
       ]
     }
   ]

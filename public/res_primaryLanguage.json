@@ -11,13 +11,9 @@
   },
   "projects": [
     {
-      "title": "Fraud Detection System",
-      "startDate": "2025",
-      "description": "Built a machine learning model using Random Forest to detect fraudulent transactions with 92% accuracy. Reduced false positives significantly using feature engineering and hyperparameter tuning.",
-      "images": [
-        "images/portfolio/fraud-detection/p1.jpg",
-        "images/portfolio/fraud-detection/p2.jpg"
-      ],
+      "title": "Movie Recommender System",
+      "startDate": "2024",
+      "description": "Engineered a content-based recommendation engine using NLP and Cosine Similarity to analyze movie metadata, achieving a 92% matching accuracy in identifying and suggesting relevant content clusters.",
       "url": "https://github.com/06Aditya/Movie-Recommender-System",
       "technologies": [
         {
@@ -25,24 +21,24 @@
           "name": "Python"
         },
         {
-          "class": "devicon-scikit-learn-plain",
+          "class": "devicon-scikitlearn-plain",
           "name": "Scikit-learn"
         },
         {
           "class": "devicon-pandas-plain",
           "name": "Pandas"
+        },
+        {
+          "class": "devicon-numpy-plain",
+          "name": "NumPy"
         }
       ]
     },
     {
-      "title": "Customer Segmentation",
+      "title": "Speech Recognition through Emotions",
       "startDate": "2025",
-      "description": "Performed customer segmentation using K-Means clustering to identify key user groups for targeted marketing strategies.",
-      "images": [
-        "images/portfolio/customer-segmentation/p1.jpg",
-        "images/portfolio/customer-segmentation/p2.jpg"
-      ],
-      "url": "https://github.com/06Aditya",
+      "description": "Developed a Speech Emotion Recognition system using CNN and MLP architectures to classify 8 distinct emotions from the RAVDESS dataset, achieving a 91% accuracy rate through advanced MFCC and Mel-spectrogram feature extraction.",
+      "url": "https://github.com/06Aditya/Speech-Recognition-through-the-Emotions",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -55,17 +51,22 @@
         {
           "class": "devicon-pandas-plain",
           "name": "Pandas"
+        },
+        {
+          "class": "devicon-scikitlearn-plain",
+          "name": "Scikit-learn"
+        },
+        {
+          "class": "devicon-tensorflow-original",
+          "name": "TensorFlow"
         }
       ]
     },
     {
-      "title": "ML Pipeline Automation",
-      "startDate": "2024",
-      "description": "Designed an end-to-end ML pipeline for data preprocessing, model training, evaluation, and deployment automation using Docker containers.",
-      "images": [
-        "images/portfolio/ml-pipeline/p1.jpg"
-      ],
-      "url": "https://github.com/06Aditya",
+      "title": "Face Mask Detection using CNN",
+      "startDate": "2026",
+      "description": "Developed a real-time computer vision system using a Convolutional Neural Network (CNN) and OpenCV to detect face mask compliance, achieving 98% detection accuracy across live webcam streams and varied lighting conditions.",
+      "url": "https://github.com/06Aditya/Face-Mask-detection-using-CNN-Convolutional-Neural-Network-",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -74,6 +75,10 @@
         {
           "class": "devicon-docker-plain",
           "name": "Docker"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV"
         }
       ]
     }

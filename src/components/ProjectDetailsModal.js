@@ -31,26 +31,27 @@ class ProjectDetailsModal extends Component {
     return (
       <Modal
         {...this.props}
-        size="lg"
-        centered
+        size="xl" // Changed from "lg" to "xl" for a bigger card
+        aria-labelledby="contained-modal-title-vcenter"
+        centered // Keeps the modal perfectly centered
         className="project-details-modal"
-        /* Inline style to ensure the modal content container follows the theme */
         contentClassName="custom-modal-content"
       >
         <div style={{ 
           background: "var(--card-background)", 
           borderRadius: "8px", 
-          padding: "20px",
+          padding: "40px 20px", // Increased vertical padding for a more spacious feel
           border: "1px solid rgba(174,148,79, 0.2)",
-          transition: "all 0.4s ease" 
+          transition: "all 0.4s ease",
+          minHeight: "50vh" // Ensures the card has a significant presence
         }}>
-          <span onClick={this.props.onHide} className="modal-close" style={{ cursor: "pointer" }}>
+          <span onClick={this.props.onHide} className="modal-close" style={{ cursor: "pointer", position: "absolute", right: "25px", top: "20px" }}>
             <i className="fas fa-times fa-2x close-icon" style={{ color: "var(--header-text)" }}></i>
           </span>
 
           <div className="col-md-12">
             {/* Window buttons - Kept for that "clean" dev look */}
-            <div className="col-md-10 mx-auto" style={{ paddingBottom: "20px", textAlign: "left" }}>
+            <div className="col-md-11 mx-auto" style={{ paddingBottom: "20px", textAlign: "left" }}>
               <div className="slider-tab">
                 <span className="iconify" data-icon="emojione:red-circle"></span> &nbsp;
                 <span className="iconify" data-icon="twemoji:yellow-circle"></span> &nbsp;
@@ -58,11 +59,11 @@ class ProjectDetailsModal extends Component {
               </div>
             </div>
 
-            <div className="col-md-10 mx-auto">
+            <div className="col-md-11 mx-auto"> {/* Adjusted to col-md-11 for wider content alignment */}
               <h3 style={{ 
                 padding: "5px", 
                 color: "var(--header-text)", 
-                fontSize: "2rem",
+                fontSize: "2.5rem", // Slightly larger title for the bigger modal
                 fontWeight: "600"
               }}>
                 {title}
@@ -81,14 +82,14 @@ class ProjectDetailsModal extends Component {
 
               <p style={{ 
                 color: "var(--text-color)", 
-                fontSize: "1.2rem", 
-                lineHeight: "1.6",
-                marginTop: "20px"
+                fontSize: "1.5rem", // Slightly larger text for readability in the big modal
+                lineHeight: "1.8",
+                marginTop: "30px"
               }}>
                 {description}
               </p>
 
-              <div className="col-md-12 text-center" style={{ marginTop: "30px", paddingBottom: "20px" }}>
+              <div className="col-md-12 text-center" style={{ marginTop: "50px", paddingBottom: "20px" }}>
                 <ul className="list-inline mx-auto">{tech}</ul>
               </div>
             </div>
